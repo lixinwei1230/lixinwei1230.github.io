@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jumpers Arena</title>
+    <meta name="description" content="This theme comes from BootstrapZero." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="SuM_">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Questrial);
+        @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+            background-color: #282828;
+            color: #d3d3d3;
+            webkit-tap-highlight-color: #222;
+        }
+
+        hr {
+            max-width: 80px;
+            border-width: 3px;
+            opacity: 0.09;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        hr.light {
+            border-color: #fff;
+        }
+
+        a {
+            color: #9c27b0;
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+        a:hover,
+        a:focus {
+            color: #9c27c1;
+            outline: 0;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .wide-space {
+            letter-spacing: 1.6px;
+        }
+
+        .icon-lg {
+            font-size: 50px;
+            line-height: 18px;
+        }
+
+        .bg-primary {
+            background-color: #333;
+        }
+
+        .bg-dark {
+            color: #eee;
+            background-color: #222;
+        }
+
+        .cursive {
+            font-family: 'Dancing Script', cursive;
+            text-transform: none;
+        }
+
+        .text-faded {
+            color: rgba(245,245,245,0.7);
+        }
+
+        .text-dark {
+            color: #111;
+        }
+
+        .text-primary {
+            color: #9c27b0;
+        }
+
+        .modal-content {
+            background-color: #1d1d1d;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        aside {
+            padding: 50px 0;
+        }
+
+        footer {
+            padding: 15px;
+        }
+
+        .no-padding {
+            padding: 0;
+        }
+
+        .navbar-default {
+            border-color: rgba(35,35,35,.05);
+            font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+            background-color: #222;
+            -webkit-transition: all .4s;
+            -moz-transition: all .4s;
+            transition: all .4s;
+        }
+
+        .navbar-header > .navbar-brand {
+            font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+            color: #9c27b0;
+            padding: 15px;
+            -webkit-transition: padding .2s ease-in;
+            -moz-transition: padding .2s ease-in;
+            transition: padding .2s ease-in;
+        }
+
+        .navbar-header > .navbar-brand:hover,
+        .navbar-header > .navbar-brand:focus {
+            color: #8b27b0;
+        }
+
+        .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+            background-color: #181818;
+        }
+        .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
+            border-color: transparent;
+        }
+
+        .navbar-default .nav > li>a,
+        .navbar-default .nav>li>a:focus {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 700;
+            color: #eee;
+        }
+
+        .navbar-default .nav > li>a:hover,
+        .navbar-default .nav>li>a:focus:hover {
+            color: #9c27b0;
+        }
+
+        .navbar-default .nav > li.active>a,
+        .navbar-default .nav>li.active>a:focus {
+            color: #9c27b0 !important;
+            background-color: transparent;
+        }
+
+        .navbar-default .nav > li.active>a:hover,
+        .navbar-default .nav>li.active>a:focus:hover
+        {
+            background-color: transparent;
+        }
+
+
+        @media(min-width:768px) {
+            .navbar-default {
+                border-color: transparent;
+                background-color: transparent;
+                min-height: 60px;
+            }
+
+            .navbar-header > .navbar-brand {
+                color: rgba(255,255,255,0.7);
+                padding: 19px;
+            }
+
+            .navbar-default .navbar-header .navbar-brand:hover,
+            .navbar-default .navbar-header .navbar-brand:focus {
+                color: #f4f4f4;
+            }
+
+            .navbar-default .nav > li>a,
+            .navbar-default .nav>li>a:focus {
+                color: rgba(255,255,255,0.8);
+                padding: 20px;
+                letter-spacing: 1.1px;
+                text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
+            }
+
+            .navbar-default .nav > li>a:hover,
+            .navbar-default .nav>li>a:focus:hover {
+                color: #fefefe;
+            }
+
+            .navbar-default.affix {
+                border-color: rgba(34,34,34,.05);
+                background-color: #222;
+            }
+
+            .navbar-default.affix .navbar-header .navbar-brand {
+                font-size: 15px;
+                color: #9c27b0;
+                padding: 20px;
+                letter-spacing: 1px;
+            }
+
+            .navbar-default.affix .navbar-header .navbar-brand:hover,
+            .navbar-default.affix .navbar-header .navbar-brand:focus {
+                color: #8b27b0;
+            }
+
+            .navbar-default.affix .nav > li>a,
+            .navbar-default.affix .nav>li>a:focus {
+                color: #ddd;
+                text-shadow: 1px 1px 1px rgba(30,30,30,0.7);
+            }
+
+            .navbar-default.affix .nav > li>a:hover,
+            .navbar-default.affix .nav>li>a:focus:hover {
+                color: #9c27b0;
+            }
+        }
+
+        header {
+            position: relative;
+            min-height: auto;
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            background-color: #c9c9c9;
+            background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg');
+            background-position: center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+
+        header .header-content {
+            position: relative;
+            width: 100%;
+            padding: 100px 15px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        header .header-content .inner h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        header .header-content .inner p {
+            margin-bottom: 50px;
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(255,255,255,0.7);
+        }
+
+        #video-background {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+        }
+
+        #video-background.collapsing {
+            display:none;
+        }
+
+        footer {
+            background-color:#2d2d2d;
+        }
+
+        @media(min-width:768px) {
+            .icon-lg {
+                font-size: 80px;
+            }
+
+            header {
+                min-height: 100%;
+            }
+
+            header .header-content {
+                position: absolute;
+                top: 50%;
+                padding: 0 50px;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            header .header-content .inner {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 1000px;
+            }
+
+            header .header-content .inner h1 {
+                font-size: 53px;
+            }
+
+            header .header-content .inner p {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 80%;
+                font-size: 18px;
+            }
+
+            section {
+                min-height: 600px;
+                padding: 100px 0;
+            }
+
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 35px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #eee;
+            background-color: #36333d;
+            background-image: none;
+            border: 1px solid #36333d;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+
+        .form-control:focus {
+            color: #222;
+            background-color: #ccc;
+            box-shadow: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .margin-top-0 {
+            margin-top: 0;
+        }
+
+        .feature {
+            margin: 50px auto 0;
+            max-width: 400px;
+        }
+
+        @media(min-width:992px) {
+            .feature {
+                margin: 20px auto 0;
+            }
+        }
+
+        .feature p {
+            margin-bottom: 0;
+        }
+
+        .call-to-action h2 {
+            margin: 0 auto 20px;
+        }
+
+        .gallery-box {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            max-width: 650px;
+            overflow:hidden;
+        }
+
+        .gallery-box .gallery-box-caption {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            opacity: 0;
+            background: rgba(44,44,44,.8);
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+        .gallery-box .gallery-box-caption .gallery-box-content {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+        }
+
+        .gallery-box:hover .gallery-box-caption {
+            opacity: 1;
+        }
+
+        .gallery-box:hover img {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .gallery-box img {
+            -webkit-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+
+        .no-gutter > [class*=col-] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .btn-default {
+            border-color: #fff;
+            color: #222;
+            background-color: #fff;
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+        .btn-default:hover,
+        .btn-default:focus,
+        .btn-default.focus,
+        .btn-default:active,
+        .btn-default.active,
+        .open > .dropdown-toggle.btn-default {
+            border-color: #ededed;
+            color: #222;
+            background-color: #f2f2f2;
+            opacity: 0.7;
+        }
+
+        .btn-default:active,
+        .btn-default.active,
+        .open > .dropdown-toggle.btn-default {
+            background-image: none;
+        }
+
+        .btn-default.disabled,
+        .btn-default[disabled],
+        fieldset[disabled] .btn-default,
+        .btn-default.disabled:hover,
+        .btn-default[disabled]:hover,
+        fieldset[disabled] .btn-default:hover,
+        .btn-default.disabled:focus,
+        .btn-default[disabled]:focus,
+        fieldset[disabled] .btn-default:focus,
+        .btn-default.disabled.focus,
+        .btn-default[disabled].focus,
+        fieldset[disabled] .btn-default.focus,
+        .btn-default.disabled:active,
+        .btn-default[disabled]:active,
+        fieldset[disabled] .btn-default:active,
+        .btn-default.disabled.active,
+        .btn-default[disabled].active,
+        fieldset[disabled] .btn-default.active {
+            border-color: #fff;
+            background-color: #fff;
+            opacity: 0.7;
+        }
+
+        .btn-default .badge {
+            color: #fff;
+            background-color: #222;
+        }
+
+        .btn.btn-primary {
+            background-color: transparent;
+            border:1px solid #f0f0f0;
+            border-color:#f0f0f0;
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+        .btn.btn-primary:hover {
+            opacity: 0.7;
+        }
+
+        .btn {
+            border: 0;
+            border-radius: 290px;
+            font-family: 'Helvetica Neue',Arial,sans-serif;
+        }
+
+        .btn-xl {
+            padding: 15px 30px;
+            font-size: 20px;
+        }
+
+        ::-moz-selection {
+            text-shadow: none;
+            color: #fff;
+            background: #222;
+        }
+
+        ::selection {
+            text-shadow: none;
+            color: #fff;
+            background: #222;
+        }
+
+        img::selection {
+            color: #fff;
+            background: 0 0;
+        }
+
+        img::-moz-selection {
+            color: #fff;
+            background: 0 0;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Jump Arena</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#one">Intro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#four">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#last">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Welcome to Jumpers Arena</h1>
+                <h4>An awesome jumping game with cute characters</h4>
+                <hr>
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+            </div>
+        </div>
+        <!--<video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-1.amazonaws.com/caknow/img/bg-video.jpg" id="video-background">
+            <source src="https://s3-us-west-1.amazonaws.com/caknow/vid/introduction.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>-->
+    </header>
+    <section class="bg-primary" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">A great cross platform mobile racing game</h2>
+                    <br>
+                    <p class="text-faded">
+                        Jumpers Arena is a mobile platform racing game. Players can have a match with another players online, or fight against monsters solo. Customize your character, pick up the props and jump higher!
+                    </p>
+                    <a href="#three" class="btn btn-default btn-xl page-scroll">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/deer.jpg">
+                        <img src="./assets/deer.jpg" class="img-responsive" alt="Image 1">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/beach.jpg">
+                        <img src="./assets/beach.jpg" class="img-responsive" alt="Image 2">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/lake.jpg">
+                        <img src="./assets/lake.jpg" class="img-responsive" alt="Image 3">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/bike.jpg">
+                        <img src="./assets/bike.jpg" class="img-responsive" alt="Image 4">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/city.jpg">
+                        <img src="./assets/city.jpg" class="img-responsive" alt="Image 5">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/colors.jpg">
+                        <img src="./assets/colors.jpg" class="img-responsive" alt="Image 6">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="three">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <h2 class="text-center text-primary">Features</h2>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Simple</h3>
+                    <div class="media-body media-middle">
+                        <p>What could be easier? Get started fast with this landing page starter theme.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-ios-bolt-outline"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeIn">
+                    <h3>Free</h3>
+                    <div class="media-left">
+                        <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i class="icon-lg ion-ios-cloud-download-outline"></i></a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Yes, please. Grab it for yourself, and make something awesome with this.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Unique</h3>
+                    <div class="media-body media-middle">
+                        <p>Because you don't want your Bootstrap site, to look like a Bootstrap site.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-ios-snowy"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeIn">
+                    <h3>Popular</h3>
+                    <div class="media-left">
+                        <i class="icon-lg ion-ios-heart-outline"></i>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>There's good reason why Bootstrap is the most used frontend framework in the world.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Tested</h3>
+                    <div class="media-body media-middle">
+                        <p>Bootstrap is matured and well-tested. It's a stable codebase that provides consistency.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-ios-flask-outline"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="four">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary">Our Team</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-images wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Responsive</h3>
+                        <p class="text-muted">Your site looks good everywhere</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <a href="https://www.linkedin.com/in/yiyelin/" target="_blank"><i class="icon-lg ion-images wow fadeInUp" data-wow-delay=".2s"></i></a>
+                        <a href="https://www.google.com" target="_blank"><h3>Yiye Lin</h3></a>
+                        <p class="text-muted">Our main designer, all of the art asset comes from her hand </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-images wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Consistent</h3>
+                        <p class="text-muted">A mature, well-tested, stable codebase</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-images wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Responsive</h3>
+                        <p class="text-muted">Your site looks good everywhere</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-images wow fadeInUp" data-wow-delay=".2s"></i>
+                        <h3>Customizable</h3>
+                        <p class="text-muted">Easy to theme and customize with SASS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-images wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Consistent</h3>
+                        <p class="text-muted">A mature, well-tested, stable codebase</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-md-offset-4 col-lg-offset-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-images wow fadeInUp" data-wow-delay=".2s"></i>
+                        <h3>Customizable</h3>
+                        <p class="text-muted">Easy to theme and customize with SASS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="last">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="margin-top-0 wow fadeIn">Any Suggestions</h2>
+                    <hr class="primary">
+                    <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <form class="contact-form row">
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="col-md-12">
+                            <label></label>
+                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <label></label>
+                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Information</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Benefits</a></li>
+                        <li><a href="">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4>Stay Posted</h4>
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-3 text-right">
+                    <h4>Follow</h4>
+                    <ul class="list-inline">
+                      <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
+                      <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
+                      <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com">Landing Zero by BootstrapZero</a> ©2015 Company</span>
+        </div>
+    </footer>
+    <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<img src="" id="galleryImage" class="img-responsive" />
+        		<p>
+        		    <br/>
+        		    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+        		</p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Landing Jumpers Arena</h2>
+        		<!--<h5 class="text-center">
+        		    A free, responsive landing page theme built by BootstrapZero.
+        		</h5>-->
+        		<p class="text-justify">
+                Jumpers Arena is a mobile platform racing game. Players can have a match with another players online, or fight against monsters solo. Customize your character, pick up the props and jump higher!
+        		</p>
+        		<p class="text-center"><a href="http://www.bootstrapzero.com">Download at appstore</a></p>
+        		<br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Nice Job!</h2>
+        		<p class="text-center">We are still working on the website's detail right now.</p>
+        		<p class="text-center"><a href="http://www.google.com">Click to download our game</a></p>
+        		<br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK <i class="ion-android-close"></i></button>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!--scripts loaded here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script>
+      (function() {
+        var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,
+          bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+          indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+        Util = (function() {
+          function Util() {}
+
+          Util.prototype.extend = function(custom, defaults) {
+            var key, value;
+            for (key in defaults) {
+              value = defaults[key];
+              if (custom[key] == null) {
+                custom[key] = value;
+              }
+            }
+            return custom;
+          };
+
+          Util.prototype.isMobile = function(agent) {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+          };
+
+          Util.prototype.createEvent = function(event, bubble, cancel, detail) {
+            var customEvent;
+            if (bubble == null) {
+              bubble = false;
+            }
+            if (cancel == null) {
+              cancel = false;
+            }
+            if (detail == null) {
+              detail = null;
+            }
+            if (document.createEvent != null) {
+              customEvent = document.createEvent('CustomEvent');
+              customEvent.initCustomEvent(event, bubble, cancel, detail);
+            } else if (document.createEventObject != null) {
+              customEvent = document.createEventObject();
+              customEvent.eventType = event;
+            } else {
+              customEvent.eventName = event;
+            }
+            return customEvent;
+          };
+
+          Util.prototype.emitEvent = function(elem, event) {
+            if (elem.dispatchEvent != null) {
+              return elem.dispatchEvent(event);
+            } else if (event in (elem != null)) {
+              return elem[event]();
+            } else if (("on" + event) in (elem != null)) {
+              return elem["on" + event]();
+            }
+          };
+
+          Util.prototype.addEvent = function(elem, event, fn) {
+            if (elem.addEventListener != null) {
+              return elem.addEventListener(event, fn, false);
+            } else if (elem.attachEvent != null) {
+              return elem.attachEvent("on" + event, fn);
+            } else {
+              return elem[event] = fn;
+            }
+          };
+
+          Util.prototype.removeEvent = function(elem, event, fn) {
+            if (elem.removeEventListener != null) {
+              return elem.removeEventListener(event, fn, false);
+            } else if (elem.detachEvent != null) {
+              return elem.detachEvent("on" + event, fn);
+            } else {
+              return delete elem[event];
+            }
+          };
+
+          Util.prototype.innerHeight = function() {
+            if ('innerHeight' in window) {
+              return window.innerHeight;
+            } else {
+              return document.documentElement.clientHeight;
+            }
+          };
+
+          return Util;
+
+        })();
+
+        WeakMap = this.WeakMap || this.MozWeakMap || (WeakMap = (function() {
+            function WeakMap() {
+              this.keys = [];
+              this.values = [];
+            }
+
+            WeakMap.prototype.get = function(key) {
+              var i, item, j, len, ref;
+              ref = this.keys;
+              for (i = j = 0, len = ref.length; j < len; i = ++j) {
+                item = ref[i];
+                if (item === key) {
+                  return this.values[i];
+                }
+              }
+            };
+
+            WeakMap.prototype.set = function(key, value) {
+              var i, item, j, len, ref;
+              ref = this.keys;
+              for (i = j = 0, len = ref.length; j < len; i = ++j) {
+                item = ref[i];
+                if (item === key) {
+                  this.values[i] = value;
+                  return;
+                }
+              }
+              this.keys.push(key);
+              return this.values.push(value);
+            };
+
+            return WeakMap;
+
+          })());
+
+        MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = (function() {
+            function MutationObserver() {
+              if (typeof console !== "undefined" && console !== null) {
+                console.warn('MutationObserver is not supported by your browser.');
+              }
+              if (typeof console !== "undefined" && console !== null) {
+                console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
+              }
+            }
+
+            MutationObserver.notSupported = true;
+
+            MutationObserver.prototype.observe = function() {};
+
+            return MutationObserver;
+
+          })());
+
+        getComputedStyle = this.getComputedStyle || function(el, pseudo) {
+            this.getPropertyValue = function(prop) {
+              var ref;
+              if (prop === 'float') {
+                prop = 'styleFloat';
+              }
+              if (getComputedStyleRX.test(prop)) {
+                prop.replace(getComputedStyleRX, function(_, _char) {
+                  return _char.toUpperCase();
+                });
+              }
+              return ((ref = el.currentStyle) != null ? ref[prop] : void 0) || null;
+            };
+            return this;
+          };
+
+        getComputedStyleRX = /(\-([a-z]){1})/g;
+
+        this.WOW = (function() {
+          WOW.prototype.defaults = {
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: null
+          };
+
+          function WOW(options) {
+            if (options == null) {
+              options = {};
+            }
+            this.scrollCallback = bind(this.scrollCallback, this);
+            this.scrollHandler = bind(this.scrollHandler, this);
+            this.resetAnimation = bind(this.resetAnimation, this);
+            this.start = bind(this.start, this);
+            this.scrolled = true;
+            this.config = this.util().extend(options, this.defaults);
+            this.animationNameCache = new WeakMap();
+            this.wowEvent = this.util().createEvent(this.config.boxClass);
+          }
+
+          WOW.prototype.init = function() {
+            var ref;
+            this.element = window.document.documentElement;
+            if ((ref = document.readyState) === "interactive" || ref === "complete") {
+              this.start();
+            } else {
+              this.util().addEvent(document, 'DOMContentLoaded', this.start);
+            }
+            return this.finished = [];
+          };
+
+          WOW.prototype.start = function() {
+            var box, j, len, ref;
+            this.stopped = false;
+            this.boxes = (function() {
+              var j, len, ref, results;
+              ref = this.element.querySelectorAll("." + this.config.boxClass);
+              results = [];
+              for (j = 0, len = ref.length; j < len; j++) {
+                box = ref[j];
+                results.push(box);
+              }
+              return results;
+            }).call(this);
+            this.all = (function() {
+              var j, len, ref, results;
+              ref = this.boxes;
+              results = [];
+              for (j = 0, len = ref.length; j < len; j++) {
+                box = ref[j];
+                results.push(box);
+              }
+              return results;
+            }).call(this);
+            if (this.boxes.length) {
+              if (this.disabled()) {
+                this.resetStyle();
+              } else {
+                ref = this.boxes;
+                for (j = 0, len = ref.length; j < len; j++) {
+                  box = ref[j];
+                  this.applyStyle(box, true);
+                }
+              }
+            }
+            if (!this.disabled()) {
+              this.util().addEvent(window, 'scroll', this.scrollHandler);
+              this.util().addEvent(window, 'resize', this.scrollHandler);
+              this.interval = setInterval(this.scrollCallback, 50);
+            }
+            if (this.config.live) {
+              return new MutationObserver((function(_this) {
+                return function(records) {
+                  var k, len1, node, record, results;
+                  results = [];
+                  for (k = 0, len1 = records.length; k < len1; k++) {
+                    record = records[k];
+                    results.push((function() {
+                      var l, len2, ref1, results1;
+                      ref1 = record.addedNodes || [];
+                      results1 = [];
+                      for (l = 0, len2 = ref1.length; l < len2; l++) {
+                        node = ref1[l];
+                        results1.push(this.doSync(node));
+                      }
+                      return results1;
+                    }).call(_this));
+                  }
+                  return results;
+                };
+              })(this)).observe(document.body, {
+                childList: true,
+                subtree: true
+              });
+            }
+          };
+
+          WOW.prototype.stop = function() {
+            this.stopped = true;
+            this.util().removeEvent(window, 'scroll', this.scrollHandler);
+            this.util().removeEvent(window, 'resize', this.scrollHandler);
+            if (this.interval != null) {
+              return clearInterval(this.interval);
+            }
+          };
+
+          WOW.prototype.sync = function(element) {
+            if (MutationObserver.notSupported) {
+              return this.doSync(this.element);
+            }
+          };
+
+          WOW.prototype.doSync = function(element) {
+            var box, j, len, ref, results;
+            if (element == null) {
+              element = this.element;
+            }
+            if (element.nodeType !== 1) {
+              return;
+            }
+            element = element.parentNode || element;
+            ref = element.querySelectorAll("." + this.config.boxClass);
+            results = [];
+            for (j = 0, len = ref.length; j < len; j++) {
+              box = ref[j];
+              if (indexOf.call(this.all, box) < 0) {
+                this.boxes.push(box);
+                this.all.push(box);
+                if (this.stopped || this.disabled()) {
+                  this.resetStyle();
+                } else {
+                  this.applyStyle(box, true);
+                }
+                results.push(this.scrolled = true);
+              } else {
+                results.push(void 0);
+              }
+            }
+            return results;
+          };
+
+          WOW.prototype.show = function(box) {
+            this.applyStyle(box);
+            box.className = box.className + " " + this.config.animateClass;
+            if (this.config.callback != null) {
+              this.config.callback(box);
+            }
+            this.util().emitEvent(box, this.wowEvent);
+            this.util().addEvent(box, 'animationend', this.resetAnimation);
+            this.util().addEvent(box, 'oanimationend', this.resetAnimation);
+            this.util().addEvent(box, 'webkitAnimationEnd', this.resetAnimation);
+            this.util().addEvent(box, 'MSAnimationEnd', this.resetAnimation);
+            return box;
+          };
+
+          WOW.prototype.applyStyle = function(box, hidden) {
+            var delay, duration, iteration;
+            duration = box.getAttribute('data-wow-duration');
+            delay = box.getAttribute('data-wow-delay');
+            iteration = box.getAttribute('data-wow-iteration');
+            return this.animate((function(_this) {
+              return function() {
+                return _this.customStyle(box, hidden, duration, delay, iteration);
+              };
+            })(this));
+          };
+
+          WOW.prototype.animate = (function() {
+            if ('requestAnimationFrame' in window) {
+              return function(callback) {
+                return window.requestAnimationFrame(callback);
+              };
+            } else {
+              return function(callback) {
+                return callback();
+              };
+            }
+          })();
+
+          WOW.prototype.resetStyle = function() {
+            var box, j, len, ref, results;
+            ref = this.boxes;
+            results = [];
+            for (j = 0, len = ref.length; j < len; j++) {
+              box = ref[j];
+              results.push(box.style.visibility = 'visible');
+            }
+            return results;
+          };
+
+          WOW.prototype.resetAnimation = function(event) {
+            var target;
+            if (event.type.toLowerCase().indexOf('animationend') >= 0) {
+              target = event.target || event.srcElement;
+              return target.className = target.className.replace(this.config.animateClass, '').trim();
+            }
+          };
+
+          WOW.prototype.customStyle = function(box, hidden, duration, delay, iteration) {
+            if (hidden) {
+              this.cacheAnimationName(box);
+            }
+            box.style.visibility = hidden ? 'hidden' : 'visible';
+            if (duration) {
+              this.vendorSet(box.style, {
+                animationDuration: duration
+              });
+            }
+            if (delay) {
+              this.vendorSet(box.style, {
+                animationDelay: delay
+              });
+            }
+            if (iteration) {
+              this.vendorSet(box.style, {
+                animationIterationCount: iteration
+              });
+            }
+            this.vendorSet(box.style, {
+              animationName: hidden ? 'none' : this.cachedAnimationName(box)
+            });
+            return box;
+          };
+
+          WOW.prototype.vendors = ["moz", "webkit"];
+
+          WOW.prototype.vendorSet = function(elem, properties) {
+            var name, results, value, vendor;
+            results = [];
+            for (name in properties) {
+              value = properties[name];
+              elem["" + name] = value;
+              results.push((function() {
+                var j, len, ref, results1;
+                ref = this.vendors;
+                results1 = [];
+                for (j = 0, len = ref.length; j < len; j++) {
+                  vendor = ref[j];
+                  results1.push(elem["" + vendor + (name.charAt(0).toUpperCase()) + (name.substr(1))] = value);
+                }
+                return results1;
+              }).call(this));
+            }
+            return results;
+          };
+
+          WOW.prototype.vendorCSS = function(elem, property) {
+            var j, len, ref, result, style, vendor;
+            style = getComputedStyle(elem);
+            result = style.getPropertyCSSValue(property);
+            ref = this.vendors;
+            for (j = 0, len = ref.length; j < len; j++) {
+              vendor = ref[j];
+              result = result || style.getPropertyCSSValue("-" + vendor + "-" + property);
+            }
+            return result;
+          };
+
+          WOW.prototype.animationName = function(box) {
+            var animationName;
+            try {
+              animationName = this.vendorCSS(box, 'animation-name').cssText;
+            } catch (_error) {
+              animationName = getComputedStyle(box).getPropertyValue('animation-name');
+            }
+            if (animationName === 'none') {
+              return '';
+            } else {
+              return animationName;
+            }
+          };
+
+          WOW.prototype.cacheAnimationName = function(box) {
+            return this.animationNameCache.set(box, this.animationName(box));
+          };
+
+          WOW.prototype.cachedAnimationName = function(box) {
+            return this.animationNameCache.get(box);
+          };
+
+          WOW.prototype.scrollHandler = function() {
+            return this.scrolled = true;
+          };
+
+          WOW.prototype.scrollCallback = function() {
+            var box;
+            if (this.scrolled) {
+              this.scrolled = false;
+              this.boxes = (function() {
+                var j, len, ref, results;
+                ref = this.boxes;
+                results = [];
+                for (j = 0, len = ref.length; j < len; j++) {
+                  box = ref[j];
+                  if (!(box)) {
+                    continue;
+                  }
+                  if (this.isVisible(box)) {
+                    this.show(box);
+                    continue;
+                  }
+                  results.push(box);
+                }
+                return results;
+              }).call(this);
+              if (!(this.boxes.length || this.config.live)) {
+                return this.stop();
+              }
+            }
+          };
+
+          WOW.prototype.offsetTop = function(element) {
+            var top;
+            while (element.offsetTop === void 0) {
+              element = element.parentNode;
+            }
+            top = element.offsetTop;
+            while (element = element.offsetParent) {
+              top += element.offsetTop;
+            }
+            return top;
+          };
+
+          WOW.prototype.isVisible = function(box) {
+            var bottom, offset, top, viewBottom, viewTop;
+            offset = box.getAttribute('data-wow-offset') || this.config.offset;
+            viewTop = window.pageYOffset;
+            viewBottom = viewTop + Math.min(this.element.clientHeight, this.util().innerHeight()) - offset;
+            top = this.offsetTop(box);
+            bottom = top + box.clientHeight;
+            return top <= viewBottom && bottom >= viewTop;
+          };
+
+          WOW.prototype.util = function() {
+            return this._util != null ? this._util : this._util = new Util();
+          };
+
+          WOW.prototype.disabled = function() {
+            return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+          };
+
+          return WOW;
+
+        })();
+
+      }).call(this);
+    </script>
+    <script>
+      (function($) {
+        "use strict";
+
+        $('body').scrollspy({
+          target: '.navbar-fixed-top',
+          offset: 60
+        });
+
+        $('#topNav').affix({
+          offset: {
+            top: 200
+          }
+        });
+
+        new WOW().init();
+
+        $('a.page-scroll').bind('click', function(event) {
+          var $ele = $(this);
+          $('html, body').stop().animate({
+            scrollTop: ($($ele.attr('href')).offset().top - 60)
+          }, 1450, 'easeInOutExpo');
+          event.preventDefault();
+        });
+
+        $('.navbar-collapse ul li a').click(function() {
+            /* always close responsive nav after click */
+          $('.navbar-toggle:visible').click();
+        });
+
+        $('#galleryModal').on('show.bs.modal', function (e) {
+          $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
+        });
+
+      })(jQuery);
+    </script>
+  </body>
+</html>
