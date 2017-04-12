@@ -416,10 +416,9 @@
         suggestionObj.phoneNumber = $('#suggestion-form-phone').val();
         suggestionObj.suggestion = $('#suggestion-form-string').val();
         console.log(JSON.stringify(suggestionObj));
-        console.log(encodeURI("http://localhost:8080/suggestion"));
         $.ajax({
           type: "POST",
-          url: encodeURI("https://192.168.0.5:8080/suggestion"),
+          url: encodeURI("http://192.168.0.5:8080/suggestion"),
           contentType: "application/json; charset=utf-8",
           dataType: "json",
           data: JSON.stringify(suggestionObj),
