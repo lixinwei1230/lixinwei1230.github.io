@@ -311,7 +311,7 @@
                         </div>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
-                            <button type="button" class="btn btn-primary btn-block btn-lg" onclick="sendEmail()">Send <i class="ion-android-arrow-forward"></i></button>
+                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
                         </div>
                     </form>
                 </div>
@@ -337,10 +337,10 @@
                     <h4>Stay Posted</h4>
                     <form>
                         <div class="form-group">
-                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
+                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email" id="subscribe-email">
                         </div>
                         <div class="form-group">
-                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                          <button class="btn btn-primary" type="button" onclick="sendEmail()">Subscribe for updates</button>
                         </div>
                     </form>
                 </div>
@@ -393,7 +393,7 @@
         <div class="modal-content">
         	<div class="modal-body">
         		<h2 class="text-center">Nice Job!</h2>
-        		<p class="text-center">We are still working on the website's detail right now.</p>
+        		<p class="text-center">Thank you for your suggestion, we appreciate it.</p>
         		<p class="text-center"><a href="http://www.google.com">Click to download our game</a></p>
         		<br/>
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK <i class="ion-android-close"></i></button>
@@ -411,19 +411,16 @@
       function sendEmail() {
         var suggestionObj = new Object();
         console.log(JSON.stringify(suggestionObj));
-        suggestionObj.name = $('#suggestion-form-name').val();
-        suggestionObj.email = $('#suggestion-form-email').val();
-        suggestionObj.phoneNumber = $('#suggestion-form-phone').val();
-        suggestionObj.suggestion = $('#suggestion-form-string').val();
+        suggestionObj.email = $('#subscribe-email').val();
         console.log(JSON.stringify(suggestionObj));
         $.ajax({
           type: "POST",
-          url: encodeURI("https://sample-env-1.zvipwhcm3w.us-west-1.elasticbeanstalk.com/suggestion"),
+          url: encodeURI("http://localhost:5000/suggestion"),
           contentType: "application/json; charset=utf-8",
           dataType: "json",
           data: JSON.stringify(suggestionObj),
-          success: function (data) {
-            alert("download link have already send to your email")
+          success: function () {
+            alert("Thank you!")
           },
           error: function (e) {
             console.log(e);
