@@ -418,7 +418,7 @@
         console.log(JSON.stringify(suggestionObj));
         $.ajax({
           type: "POST",
-          url: encodeURI("http://192.168.0.5:8080/suggestion"),
+          url: encodeURI("https://sample-env-1.zvipwhcm3w.us-west-1.elasticbeanstalk.com/suggestion"),
           contentType: "application/json; charset=utf-8",
           dataType: "json",
           data: JSON.stringify(suggestionObj),
